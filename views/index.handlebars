@@ -1,0 +1,58 @@
+<div class="container my-2">
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4 text-center">
+            <img src="/assets/images/burger.jpg" class="img-fluid rounded" alt="A cartoon image of a burger">
+            <hr class="my-4">
+            <h1 class="mb-2 text-center">Eat The Burger</h1>
+        </div>
+        <div class="col-4"></div>
+    </div>
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-3">
+            <h2 class="text-center">Burgers to Eat</h2>
+            <ul class="list-group">
+                {{#each burgers}}
+                {{#unless this.devoured}}
+                <li class="list-group-item">
+                    <p>
+                        {{this.id}}: {{this.burger_name}}
+                        <button data-id="{{this.id}}" type="button" class=" btn btn-danger float-right">Devour!</button>
+                    </p>
+                </li>
+                {{/unless}}
+                {{/each}}
+            </ul>
+        </div>
+        <div class="col-3">
+            <h2 class="text-center">Burgers Devoured</h2>
+            <ul class="list-group">
+                {{#each burgers}}
+                {{#if this.devoured}}
+                <li class="list-group-item">
+                    <p>
+                        {{this.id}}: {{this.burger_name}}
+                    </p>
+                </li>
+                {{/if}}
+                {{/each}}
+            </ul>
+        </div>
+        <div class="col-3"></div>
+    </div>
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4 ">
+            <form>
+                <div class="mb-3 shadow-sm p-3 mb-5 bg-white rounded">
+                    <label for="newBurgerInput" class="form-label">Add a burger!</label>
+                    <textarea class="form-control" id="addBurger" rows="3"></textarea>
+                </div>
+                <button type="submit" id="newBurger" class="btn btn-success btn-block">Add it!</button>
+            </form>
+        </div>
+        <div class="col-4"></div>
+
+    </div>
+</div>

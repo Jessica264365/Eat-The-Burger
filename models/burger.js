@@ -1,4 +1,4 @@
-import orm from "../config/orm";
+const orm = require("../config/orm.js");
 
 const burger = {
   getBurgers: (cb) => {

@@ -1,5 +1,5 @@
 // Double check this connection setup if app doesn't work
-import connection from "./connection";
+const connection = require("./connection.js");
 
 // Function to create a question mark for each value that is added to the query string
 function questionMark(num) {
