@@ -23,13 +23,14 @@ const orm = {
   },
   // Function for creating a new row
   insertOne: function (table, columns, values, cb) {
-    let queryString = "INSERT INTO ?? ";
+    let queryString = "INSERT INTO " + table;
     queryString += "(";
     queryString += columns.toString();
     queryString += ") VALUES (";
     queryString += questionMark(values.length);
+    queryString += ") ";
     console.log(queryString);
-    connection.query(queryString, [table, values], (err, result) => {
+    connection.query(queryString, values, (err, result) => {
       if (err) throw err;
       cb(result);
     });

@@ -14,6 +14,7 @@ module.exports = (router) => {
   });
   // Add a new burger to the database
   router.post("/api/burger", (req, res) => {
+    console.log(req.body.name);
     burger.newBurger(
       ["burger_name", "devoured"],
       [req.body.name, false],
@@ -25,6 +26,8 @@ module.exports = (router) => {
   // Update a burger if it is devoured
   router.put("/api/devoured", (req, res) => {
     const id = req.body.id;
-    burger.isDevoured(id);
+    burger.isDevoured(id, (result) => {
+      res.json({ id: result.id });
+    });
   });
 };
