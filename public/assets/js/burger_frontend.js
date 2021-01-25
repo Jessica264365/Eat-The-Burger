@@ -1,3 +1,4 @@
+// When the button is clicked a new burger is posted to the database
 $("#newBurger").on("click", (event) => {
   event.preventDefault();
 
@@ -14,6 +15,7 @@ $("#newBurger").on("click", (event) => {
   });
 });
 
+//When the button is clicked a burger is moved to the devoured side of the screen
 $(".eatIt").on("click", (event) => {
   event.preventDefault();
   const burgerId = {
