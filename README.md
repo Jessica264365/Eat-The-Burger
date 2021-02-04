@@ -52,7 +52,7 @@ Read up on the documentation
 
    `npm i`
 
-3. Use the employeetracker.sql file to create your own MySQL database. Include the seed data in the seed.sql file if you wish.
+3. Use the schema.sql file to create your own MySQL database. Include the seed data in the seed.sql file if you wish.
 
 4. Be sure to update the database connection with your own passwords.
 
