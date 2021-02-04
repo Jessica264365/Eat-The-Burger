@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 - View the GitHub [repository](https://github.com/Jessica264365/Eat-The-Burger)
-- View the live [website](https://jessica264365.github.io/Eat-The-Burger/)
+- View the live [Application](https://frozen-ravine-20884.herokuapp.com/)
 
 ## Table of Contents
 
