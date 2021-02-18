@@ -21,7 +21,7 @@
 
 ## About the Project
 
-This is a burger logging application that uses demonstrates the use of ORM utilization, Handlebars, MySQL, Node, and Express. When a burger is added by the user it is saved in a MySQL database until it is "devoured". Once the buger has been added to the list it is rendered to the left side of the page with a button which the user can click to devour it. Once it is devoured the burger is then moved to the right side of the screen with the other devoured burgers.
+This is a burger logging application that demonstrates the use of ORM utilization, Handlebars, MySQL, Node, and Express. When a burger is added by the user it is saved in a MySQL database until it is "devoured". Once the buger has been added to the list it is rendered to the left side of the page with a button which the user can click to devour it. Once it is devoured the burger is then moved to the right side of the screen with the other devoured burgers.
 
 ![](./public/assets/images/burger.gif)
 
